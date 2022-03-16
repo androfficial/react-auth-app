@@ -12,10 +12,10 @@ export const Home = () => {
 
   return isAuth ? (
     <div>
-      <h1>Welcome</h1>
+      <h1 className='text-2xl font-bold'>Welcome</h1>
 
       <button onClick={onRemoveBtnClick} type='button'>
-        Log out from {email}
+        Log out from <span className='italic'>{email}</span>
       </button>
     </div>
   ) : (
